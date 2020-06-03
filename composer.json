@@ -1,0 +1,34 @@
+{
+    "name": "hexlet/pairs-data",
+    "description": "Lists implementation",
+    "license": "MIT",
+    "keywords": ["lists"],
+    "scripts": {
+        "phpunit": "phpunit",
+        "phpcs": "phpcs"
+    },
+    "authors": [
+        {
+            "name": "Roman Ashikov",
+            "email": "rmn.shkv@gmail.com"
+        }
+    ],
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/hexlet-components/php-pairs.git"
+     }],
+    "require": {
+      "php": ">=7.2.0",
+      "hexlet/pairs":"dev-master"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Lists.php"
+        ]
+    }
+}
