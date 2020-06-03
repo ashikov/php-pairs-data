@@ -1,32 +1,32 @@
 <?php
 
-namespace PhpPairs\tests;
+namespace PhpPairsData\tests;
 
 use PHPUnit\Framework\TestCase;
 
 use function PhpPairs\Pairs\cons as pairsCons;
 use function PhpPairs\Pairs\car;
 use function PhpPairs\Pairs\cdr;
-use function PhpPairs\Lists\toString;
-use function PhpPairs\Lists\length;
-use function PhpPairs\Lists\reverse;
-use function PhpPairs\Lists\l;
-use function PhpPairs\Lists\cons;
-use function PhpPairs\Lists\map;
-use function PhpPairs\Lists\filter;
-use function PhpPairs\Lists\reduce;
-use function PhpPairs\Lists\isList;
-use function PhpPairs\Lists\checkList;
-use function PhpPairs\Lists\head;
-use function PhpPairs\Lists\tail;
-use function PhpPairs\Lists\isEmpty;
-use function PhpPairs\Lists\isEqual;
-use function PhpPairs\Lists\has;
-use function PhpPairs\Lists\s;
-use function PhpPairs\Lists\conj;
-use function PhpPairs\Lists\disj;
-use function PhpPairs\Lists\concat;
-use function PhpPairs\Lists\random;
+use function PhpPairsData\Lists\toString;
+use function PhpPairsData\Lists\length;
+use function PhpPairsData\Lists\reverse;
+use function PhpPairsData\Lists\l;
+use function PhpPairsData\Lists\cons;
+use function PhpPairsData\Lists\map;
+use function PhpPairsData\Lists\filter;
+use function PhpPairsData\Lists\reduce;
+use function PhpPairsData\Lists\isList;
+use function PhpPairsData\Lists\checkList;
+use function PhpPairsData\Lists\head;
+use function PhpPairsData\Lists\tail;
+use function PhpPairsData\Lists\isEmpty;
+use function PhpPairsData\Lists\isEqual;
+use function PhpPairsData\Lists\has;
+use function PhpPairsData\Lists\s;
+use function PhpPairsData\Lists\conj;
+use function PhpPairsData\Lists\disj;
+use function PhpPairsData\Lists\concat;
+use function PhpPairsData\Lists\random;
 
 class ListsTest extends TestCase
 {

@@ -9,10 +9,10 @@ Functions for working with Lists.
 ```php
 <?php
 
-use function PhpPairs\Lists\l;
-use function PhpPairs\Lists\length;
-use function PhpPairs\Lists\filter;
-use function PhpPairs\Lists\toString;
+use function PhpPairsData\Lists\l;
+use function PhpPairsData\Lists\length;
+use function PhpPairsData\Lists\filter;
+use function PhpPairsData\Lists\toString;
 
 $list = l(1, 2, 3, 4, 5, 6);
 $length = length($list); // $length = 6;

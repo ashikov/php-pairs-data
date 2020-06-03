@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpPairs\Lists;
+namespace PhpPairsData\Lists;
 
 use function PhpPairs\Pairs\cons as pairsCons;
 use function PhpPairs\Pairs\car;
