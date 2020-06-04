@@ -1,6 +1,6 @@
 # php-pairs-data
 
-[![github action status](https://github.com/ashikov/php-pairs-data/workflows/master/badge.svg)](https://github.com/hexlet-components/php-pairs/actions)
+[![github action status](https://github.com/ashikov/php-pairs-data/workflows/master/badge.svg)](https://github.com/hexlet-components/php-pairs-data/actions)
 
 Functions for working with Lists.
 
