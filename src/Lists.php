@@ -169,19 +169,16 @@ function reverse($list)
  */
 function filter($list, callable $func)
 {
-    checkList($list);
-    $iter = function ($func, $items) use (&$iter) {
-        if (isEmpty($items)) {
-            return null;
-        } else {
-            $head = head($items);
-            $tail = $iter($func, tail($items));
-            // filter
-            return $func($head) ? cons($head, $tail) : $tail;
-        }
-    };
+    if (isEmpty($list)) {
+        return l();
+    }
 
-    return $iter($func, $list);
+    $current = head($list);
+    $tailElements = tail($list);
+    if ($func($current)) {
+        return cons($current, filter($tailElements, $func));
+    }
+    return filter($tailElements, $func);
 }
 
 /**
