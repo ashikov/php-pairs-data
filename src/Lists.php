@@ -229,14 +229,13 @@ function disj($list, $element)
 function map($list, callable $func)
 {
     checkList($list);
-    $iter = function ($items, $acc) use (&$iter, $func) {
-        if (isEmpty($items)) {
-            return reverse($acc);
-        }
-        return $iter(tail($items), cons($func(head($items)), $acc));
-    };
+    if (isEmpty($list)) {
+        return l();
+    }
 
-    return $iter($list, l());
+    $newElement = $func(head($list));
+
+    return cons($newElement, map(tail($list), $func));
 }
 
 /**
