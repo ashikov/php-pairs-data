@@ -1,12 +1,12 @@
 <?php
 
-namespace PhpPairsData\Lists;
+namespace Php\Pairs\Data\Lists;
 
-use function PhpPairs\Pairs\cons as pairsCons;
-use function PhpPairs\Pairs\car;
-use function PhpPairs\Pairs\cdr;
-use function PhpPairs\Pairs\toString as pairToString;
-use function PhpPairs\Pairs\isPair;
+use function Php\Pairs\Pairs\cons as pairsCons;
+use function Php\Pairs\Pairs\car;
+use function Php\Pairs\Pairs\cdr;
+use function Php\Pairs\Pairs\toString as pairToString;
+use function Php\Pairs\Pairs\isPair;
 
 /**
  * Check if argument is list
