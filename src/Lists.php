@@ -39,7 +39,7 @@ function checkList($list)
         } else {
             $value = (string) $list;
         }
-        
+
         throw new \Exception("Argument must be list, but it was '{$value}'");
     }
 }
@@ -282,7 +282,7 @@ function length($list)
     if (isEmpty($list) || !isList($list)) {
         return 0;
     }
-    
+
     return 1 + length(tail($list));
 }
 
@@ -347,6 +347,6 @@ function toString($list)
 
         return toString($first) . ', ' . $rec($rest);
     };
-    
+
     return '(' . $rec($list) . ')';
 }
